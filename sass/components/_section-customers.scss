@@ -1,0 +1,43 @@
+.seccion-customers{
+    padding: $padding-seccion;
+}
+.customers__title{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    justify-content: center;
+    align-items: center;
+    color: $black-color;
+}
+.customers__list{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding-left: 0px;
+}
+.customers__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 81px;
+    border: 1px solid $color-svg;
+    border-radius: 4px;
+}
+.customers__item:hover{
+    border-color: $accent-color;
+    cursor: pointer;
+    animation: animacion 0.5s infinite;
+    
+}
+.customers__icon-svg{
+    fill: $color-svg;
+}
+
+.customers__item:hover .customers__icon-svg{
+    fill: $accent-color;
+}

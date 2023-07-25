@@ -1,0 +1,50 @@
+.seccion1{
+    padding: $padding-seccion;
+}
+.seccion1__list{
+    display: flex;
+    margin: 0px;
+    gap: 25px;
+    padding-left: 0px;
+    justify-content: center;
+    list-style: none;
+    padding-top: 30px;
+    
+}
+.seccion1__div-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $gray-color;
+    border-radius: 15px;
+    height: 120px;
+    margin-bottom: 15px;
+ 
+}
+.seccion1__icon-svg{
+    width: 70px;
+    height: 70px;
+}
+
+.seccion1__title{
+width: 270px;
+height: 16px;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: $black-color;
+}
+
+.seccion1__p{
+width: 270px;
+height: 75px;
+left: 215px;
+top: 801px;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: $text-color;
+}

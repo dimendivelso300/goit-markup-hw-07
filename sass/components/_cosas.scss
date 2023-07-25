@@ -1,0 +1,19 @@
+@keyframes animacion {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+.container{
+    padding: 0 15px;
+    width: 1200px;
+    margin: 0 auto;   
+}
+body{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}

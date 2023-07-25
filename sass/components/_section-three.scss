@@ -1,0 +1,74 @@
+.seccion3{
+    padding: $padding-seccion;
+        height: 648px;
+        background: $gray-color;
+    }
+    
+    .seccion3__list{
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        gap: 23px;
+    }
+    .seccion3__item{
+        list-style: none;
+        background: $white-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+    .seccion3__item:hover{
+        box-shadow: $text-color;
+        cursor: pointer;
+    }
+    .seccion3__img{
+        width: 270px;
+        height: 260px;
+    }
+    .seccion3__name{
+        display: flex;
+        margin-left: 0px;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+        color: $black-color;
+        justify-content: center;
+    }
+    .seccion3__profile{
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $text-color;
+    }
+    
+    .seccion3__redes-sociales{
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding-bottom:  15px;
+    }
+    .seccion3__item-svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        border-radius: 25px;
+        height: 35px;
+        width: 35px;
+        margin: 0px;
+    }
+    .seccion3__item-svg:hover{
+        background-color: $accent-color;
+        animation: animacion 0.5s infinite;
+    }
+    .seccion3__item-svg:hover .seccion3__icon-svg{
+        fill: $white-color;
+    }
+    .seccion3__icon-svg{
+        width: 20px;
+        height: 20px;
+        fill: $color-svg;
+    }
