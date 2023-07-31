@@ -27,17 +27,16 @@
     height: 81px;
     border: 1px solid $color-svg;
     border-radius: 4px;
-}
-.customers__item:hover{
-    border-color: $accent-color;
-    cursor: pointer;
-    animation: animacion 0.5s infinite;
-    
-}
-.customers__icon-svg{
-    fill: $color-svg;
+    &:hover{
+        border-color: $accent-color;
+        cursor: pointer;
+        animation: animacion 0.5s infinite;
+        .customers__icon-svg{
+            fill: $accent-color;
+        }
+    }
 }
 
-.customers__item:hover .customers__icon-svg{
-    fill: $accent-color;
+.customers__icon-svg{
+    fill: $color-svg;
 }

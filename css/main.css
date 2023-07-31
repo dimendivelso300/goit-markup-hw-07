@@ -68,7 +68,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  font-family: "Raleway" sans-serif;
   text-align: right;
   letter-spacing: 0.03em;
   color: #2196f3;
@@ -266,18 +265,16 @@ body {
   background: #ffffff;
   cursor: pointer;
 }
+.modal__btn-close:hover {
+  border: 1px solid #2196f3;
+}
+.modal__btn-close:hover .modal__svg-close {
+  fill: #2196f3;
+}
 
 .modal__svg-close {
   width: 18px;
   height: 18px;
-}
-
-.modal__btn-close:hover {
-  border: 1px solid #2196f3;
-}
-
-.modal__btn-close:hover .modal__svg-close {
-  fill: #2196f3;
 }
 
 .modal__title-form {
@@ -319,6 +316,15 @@ body {
   outline: none;
   border-radius: 5px;
 }
+.modal__input:hover, .modal__input:focus {
+  border: 1px solid #2196f3;
+}
+
+.modal__input:hover + .modal__icon-svg,
+.modal__input:focus + .modal__icon-svg {
+  fill: #2196f3;
+  cursor: pointer;
+}
 
 .modal__icon-svg {
   position: absolute;
@@ -338,15 +344,8 @@ body {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
-
-.modal__input:hover, .modal__input:focus {
+.modal__textarea:hover, .modal__textarea:focus {
   border: 1px solid #2196f3;
-}
-
-.modal__input:hover + .modal__icon-svg,
-.modal__input:focus + .modal__icon-svg {
-  fill: #2196f3;
-  cursor: pointer;
 }
 
 .modal__div-checkbox {
@@ -359,10 +358,6 @@ body {
           flex-direction: column;
   margin-top: 15px;
   height: 48px;
-}
-
-.modal__textarea:hover, .modal__textarea:focus {
-  border: 1px solid #2196f3;
 }
 
 .visually-hidden {
@@ -645,8 +640,7 @@ body {
   gap: 25px;
   padding-bottom: 15px;
 }
-
-.seccion3__item-svg {
+.seccion3__redes-sociales .seccion3__item-svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,14 +656,12 @@ body {
   width: 35px;
   margin: 0px;
 }
-
-.seccion3__item-svg:hover {
+.seccion3__redes-sociales .seccion3__item-svg:hover {
   background-color: #2196f3;
   -webkit-animation: animacion 0.5s infinite;
           animation: animacion 0.5s infinite;
 }
-
-.seccion3__item-svg:hover .seccion3__icon-svg {
+.seccion3__redes-sociales .seccion3__item-svg:hover .seccion3__icon-svg {
   fill: #ffffff;
 }
 
@@ -726,20 +718,18 @@ body {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
-
 .customers__item:hover {
   border-color: #2196f3;
   cursor: pointer;
   -webkit-animation: animacion 0.5s infinite;
           animation: animacion 0.5s infinite;
 }
+.customers__item:hover .customers__icon-svg {
+  fill: #2196f3;
+}
 
 .customers__icon-svg {
   fill: #AFB1B8;
-}
-
-.customers__item:hover .customers__icon-svg {
-  fill: #2196f3;
 }
 
 .portafolio__list-buttons {
@@ -771,7 +761,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .portafolio__btn:focus {
   background-color: #2196f3;
   color: #f5f4fa;
@@ -802,13 +791,16 @@ body {
   border: 1px solid #EEEEEE;
   border-radius: 0px 0px 4px 4px;
 }
-
 .portafolio__elemens-img:hover {
   border: 0px;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   color: #212121;
+}
+.portafolio__elemens-img:hover .portafolio__card-animation {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .portafolio__card-animation {
@@ -826,11 +818,6 @@ body {
   transition: 250ms ease;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portafolio__elemens-img:hover .portafolio__card-animation {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
 }
 
 .portafolio__card-image {
@@ -875,7 +862,6 @@ footer {
   height: 252px;
   background: #2f303a;
 }
-
 footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -973,13 +959,6 @@ footer .container {
   height: 44px;
   border-radius: 25px;
 }
-
-.footer__icon-svg {
-  width: 20px;
-  height: 20px;
-  fill: #ffffff;
-}
-
 .footer__element-svg:hover {
   background-color: #2196f3;
   -webkit-animation: cambio-color 0.8s infinite;
@@ -988,8 +967,13 @@ footer .container {
   -webkit-animation: animacion 0.5s infinite;
           animation: animacion 0.5s infinite;
 }
-
 .footer__element-svg:hover .footer__icon-svg {
+  fill: #ffffff;
+}
+
+.footer__icon-svg {
+  width: 20px;
+  height: 20px;
   fill: #ffffff;
 }
 

@@ -49,7 +49,7 @@
         align-items: center;
         gap: 25px;
         padding-bottom:  15px;
-    }
+   
     .seccion3__item-svg{
         display: flex;
         justify-content: center;
@@ -59,14 +59,15 @@
         height: 35px;
         width: 35px;
         margin: 0px;
+        &:hover{
+            background-color: $accent-color;
+            animation: animacion 0.5s infinite;
+            .seccion3__icon-svg{
+                fill: $white-color;
+            }
+        }
     }
-    .seccion3__item-svg:hover{
-        background-color: $accent-color;
-        animation: animacion 0.5s infinite;
-    }
-    .seccion3__item-svg:hover .seccion3__icon-svg{
-        fill: $white-color;
-    }
+}
     .seccion3__icon-svg{
         width: 20px;
         height: 20px;
