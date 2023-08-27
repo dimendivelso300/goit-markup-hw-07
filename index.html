@@ -10,10 +10,10 @@
     <title>WebStudio</title>
 </head>
 <body> 
-    <header class="header__elements">
-        <div class="container header__menu">
+    <header class="header">
+        <div class="container header__menu-list">
             
-                <nav class="nav__menu">
+                <nav class="nav">
                     <a class="nav__logo" href="">WebStudio</a>
                     <ul class="nav__list">
                     <li><a class="nav__page nav__current" href="index.html">Estudio</a> </li>
@@ -52,62 +52,7 @@
         </section>
 
 
-        <section class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button type="button" title="data-modal-close" class="modal__btn-close" data-modal-close> 
-                <svg class="modal__svg-close">
-                    <use href="./images/SVG/icons.svg#close"></use>
-                </svg>
-                </button>
-
-                <h3 class="modal__title-form">Deje sus datos, nos contactaremos con usted</h3>
-                <form>
-                    <label class="modal__label">Nombre
-                    <div class="modal__div">
-                    <input class="modal__input" type="text" name="nombre" placeholder="Nombre" required>
-                    <svg class="modal__icon-svg">
-                        <use href="./images/SVG/icons.svg#person-modal"></use>
-                    </svg>
-                    </div>
-                    </label>
-
-                    <label class="modal__label">Telefono
-                    <div class="modal__div">
-                    <input class="modal__input" type="number" name="Telefono" placeholder="Celular" required>
-                    <svg class="modal__icon-svg">
-                        <use href="./images/SVG/icons.svg#phone-modal"></use>
-                    </svg>
-                    </div>
-                    </label>
-                    <label class="modal__label">Email
-
-                    <div class="modal__div">
-                    <input class="modal__input" type="email" name="email" placeholder="Email" required>
-                    <svg class="modal__icon-svg">
-                        <use href="./images/SVG/icons.svg#correo-modal"></use>
-                    </svg>
-                    </div>
-                    </label>
-                    
-                    <label class="modal__label">Comentarios
-                    <textarea class="modal__textarea" id="text-description"  placeholder="Introduzca el texto"></textarea>
-                     </label>
-
-                    <div class="modal__div-checkbox">
-                       <input type="checkbox" class="modal__input-checkbox visually-hidden" name="checkbox" id="policy" required> 
-                        <label for="policy" class="modal__label-checkbox">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</label>
-                    </div>
-                    
-                    
-                    <div class="modal__div-button">   
-                    <button class="modal__button" type="submit">Enviar</button>
-                    </div>
-                </form>
-            </div>
-
-        </section>
-
-
+        
         <!-- ---------- seccion 1---------- -->
         <section class="seccion1">
             <div class="container">
@@ -342,15 +287,15 @@
         
     </main>
     <!-------------pie de pagina------------->
-    <footer>
-        <div class="container ">
-            <section class="container-foo">
-                        <address>
+    <footer class="footer">
+        <div class="container footer__element">
+            <section class="footer__section-one">
+                        <address class="footer__direccion">
                         <a class="footer__logo" href="index.html">WebStudio</a>
                         <ul class="footer__list-contac">
                         <li><a class="footer__address" href="direccion">Calz. Ticomán 500, Ciudad de México, CDMX, México</a></li> 
-                        <li><a class="addres__item-conta" href="mailto:info@example.com">info@example.com</a></li>
-                        <li><a class="addres__item-conta" href="tel:+52 55 5529 6000">+52 55 5529 6000 </a></li>
+                        <li><a class="footer__item-conta" href="mailto:info@example.com">info@example.com</a></li>
+                        <li><a class="footer__item-conta" href="tel:+52 55 5529 6000">+52 55 5529 6000 </a></li>
                         </ul>
                     </address>
             </section>
@@ -401,6 +346,60 @@
             </section>
         </div>
     </footer>
+    <section class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" title="data-modal-close" class="modal__btn-close" data-modal-close> 
+            <svg class="modal__svg-close">
+                <use href="./images/SVG/icons.svg#close"></use>
+            </svg>
+            </button>
+
+            <h3 class="modal__title-form">Deje sus datos, nos contactaremos con usted</h3>
+            <form class="formulario">
+                <label class="modal__label">Nombre
+                <div class="modal__div">
+                <input class="modal__input" type="text" name="nombre" placeholder="Nombre" required>
+                <svg class="modal__icon-svg">
+                    <use href="./images/SVG/icons.svg#person-modal"></use>
+                </svg>
+                </div>
+                </label>
+
+                <label class="modal__label">Telefono
+                <div class="modal__div">
+                <input class="modal__input" type="number" name="Telefono" placeholder="Celular" required>
+                <svg class="modal__icon-svg">
+                    <use href="./images/SVG/icons.svg#phone-modal"></use>
+                </svg>
+                </div>
+                </label>
+
+                <label class="modal__label">Email
+                <div class="modal__div">
+                <input class="modal__input" type="email" name="email" placeholder="Email" required>
+                <svg class="modal__icon-svg">
+                    <use href="./images/SVG/icons.svg#correo-modal"></use>
+                </svg>
+                </div>
+                </label>
+                
+                <label class="modal__label">Comentarios
+                <textarea class="modal__textarea" id="text-description"  placeholder="Introduzca el texto"></textarea>
+                 </label>
+
+                <div class="modal__div-checkbox">
+                   <input type="checkbox" class="modal__input-checkbox visually-hidden" name="checkbox" id="policy" required> 
+                    <label for="policy" class="modal__label-checkbox">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</label>
+                </div>
+                
+                
+                <div class="modal__div-button">   
+                <button class="modal__button" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
     <script src="./js/modal.js"> </script>
 </body>
 </html>
